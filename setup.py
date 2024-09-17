@@ -5,7 +5,7 @@ import numpy
 
 setup(
     name="ptudr",
-    version="0.0.1",
+    version="0.0.3",
     author="Max Budninskiy",
     description=(
         "Parallel Transport Unfolding: Quasi-Isometric Manifold Learning"
