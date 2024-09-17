@@ -192,7 +192,7 @@ class PTU():
                 S, V = eigsh(G, self.embedding_dim, which="LA")
             else:
                 # dense eigensolver
-                S, V = eigh(G, eigvals=[N-self.embedding_dim, N-1])
+                S, V = eigh(G, subset_by_index=[N-self.embedding_dim, N-1])
             self.Embedding = V * np.sqrt(np.abs(S))
             self.logger.info('Performing MultiDimensional Scaling: done')
         except Exception:
